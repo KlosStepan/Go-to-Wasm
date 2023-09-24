@@ -1,5 +1,5 @@
 # Go-to-Wasm
-Create WebAssembly written in Go for web.  
+Create for web with Go and compile to WebAssembly.
 
 <p align="center">
   <img src="misc/imgs/6cyy36ppyibsu202d5vk.jpg" alt="wasm-go-gopher" style="width: 40%;" />
@@ -8,7 +8,7 @@ Create WebAssembly written in Go for web.
 (Image by [Denis Sedchenko](https://dev.to/x1unix/go-webassembly-internals-part-1-14aj))
 
 
-# Go Wasm Hello World!
+# Go to Wasm `Hello, WebAssembly!`
 Install Go [here](https://go.dev/doc/install) and verify installation in your system.
 ```zsh
 ➜  ~ go version
@@ -17,8 +17,8 @@ go version go1.21.1 darwin/amd64
 ## Go mod preparation
 Prepare Go project for WebAssembly in your folder
 ```zsh
-mkdir hellowasm-fiddle
-cd hellowasm-fiddle
+> mkdir hellowasm-fiddle
+> cd hellowasm-fiddle
 hellowasm-fiddle> go mod init stkl.cz/hellowasm-fiddle
 go: creating new go.mod: module stkl.cz/hellowasm-fiddle
 go: to add module requirements and sums:
@@ -65,7 +65,7 @@ Serving HTTP on :: port 8000 (http://[::]:8000/) ...
 ::1 - - [23/Sep/2023 23:31:16] "GET /wasm_exec.js HTTP/1.1" 200 -
 ::1 - - [23/Sep/2023 23:31:16] "GET /main.wasm HTTP/1.1" 200 -
 ```  
-After test run `clean`.  
+After running sample `Hello, WebAssembly!` use `clean`.  
 ```zsh
 hellowasm-fiddle> make clean
 # Remove build stuff; get back to "initial state"
