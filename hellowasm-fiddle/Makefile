@@ -9,4 +9,4 @@ build:
 
 clean:
 	# Remove build stuff; get back to "initial state"
-	rm -rf go.sum main.wasm wasm_exec.js
+	rm -rf go.sum main.wasm wasm_exec.js mybin
